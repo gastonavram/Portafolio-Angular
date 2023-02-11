@@ -1,13 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <!-- META -->
   <meta charset="utf-8">
-  <title>PortafolioAngular</title>
-  <base href="/">
+  <meta name="Portafolio" content="Página web portafolio personal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- PRELOAD -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/fondo.webp" as="image">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <title>Portafolio - Angular</title>
 </head>
+
 <body>
   <app-root></app-root>
+  <script>
+    // Abrir y cerrar menu de navegación
+    $(document).ready(function () {
+      $('.btn').click(function () {
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+      });
+    });
+
+    // Cerrar menu de navegacion al ir a otra seccion
+    $(document).ready(function () {
+      $('.items').click(function () {
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+      });
+    });
+  </script>
 </body>
 </html>

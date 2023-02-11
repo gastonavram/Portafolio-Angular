@@ -1,0 +1,47 @@
+.centrar{
+    padding: 5rem 0 4rem;
+}
+
+@media (min-width: 1000px) {
+    .centrar {
+        padding-top: 12rem;
+    }
+
+    .centrar_dos {
+        padding-top: 4rem;
+    }
+}
+
+.contenedor {
+    max-width: 150rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;  
+}
+
+.tecnicas {
+    justify-content: center;
+}
+
+.personales {
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+@media (min-width: 1311px) {
+    .personales {
+        justify-content: space-evenly;
+    }
+}
+
+
+circle-progress {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s
+}
+
+circle-progress:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+    cursor: pointer;
+}
