@@ -1,47 +1,48 @@
-.centrar{
-    padding: 5rem 0 4rem;
+.centrar {
+  padding: 8rem 0 4rem;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
-    .centrar {
-        padding-top: 12rem;
-    }
+  .centrar {
+    padding-top: 12rem;
+  }
 
-    .centrar_dos {
-        padding-top: 4rem;
-    }
+  .centrar_dos {
+    padding-top: 8rem;
+  }
 }
 
 .contenedor {
-    max-width: 150rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;  
+  max-width: 150rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tecnicas {
-    justify-content: center;
+  justify-content: center;
 }
 
 .personales {
-    padding-bottom: 5rem;
-    justify-content: center;
+  padding-bottom: 5rem;
+  justify-content: center;
 }
 
 @media (min-width: 1311px) {
-    .personales {
-        justify-content: space-evenly;
-    }
+  .personales {
+    justify-content: space-evenly;
+  }
 }
 
-
 circle-progress {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 circle-progress:hover {
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
-    cursor: pointer;
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  cursor: pointer;
 }

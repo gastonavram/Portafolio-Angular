@@ -1,40 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!-- PRELOAD -->
+    <link rel="preload" href="fondo.6335db4ee5674e9d.webp" as="image">
 
-<head>
-  <!-- PRELOAD -->
-  <link rel="preload" href="fondo.6335db4ee5674e9d.webp" as="image">
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Página web portafolio personal" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Angular" />
+    <meta name="author" content="Gastón Avram" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-  <!-- META -->
-  <meta charset="utf-8">
-  <meta name="description" content="Página web portafolio personal">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Angular">
-  <meta name="author" content="Gastón Avram">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+    <title>Portafolio - Angular</title>
+  </head>
 
-  <title>Portafolio - Angular</title>
-</head>
-
-<body>
-  <app-root></app-root>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script>
-    // Abrir y cerrar menu de navegación
-    $(document).ready(function () {
-      $('.btn').click(function () {
-        $('.items').toggleClass("show");
-        $('ul li').toggleClass("hide");
+  <body>
+    <div id="lead">
+      <div id="lead-over"></div>
+      <app-root></app-root>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      // Abrir y cerrar menu de navegación
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".items").toggleClass("show");
+          $("ul li").toggleClass("hide");
+        });
       });
-    });
 
-    // Cerrar menu de navegacion al ir a otra seccion
-    $(document).ready(function () {
-      $('.items').click(function () {
-        $('.items').toggleClass("show");
-        $('ul li').toggleClass("hide");
+      // Cerrar menu de navegacion al ir a otra seccion
+      $(document).ready(function () {
+        $(".items").click(function () {
+          $(".items").toggleClass("show");
+          $("ul li").toggleClass("hide");
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

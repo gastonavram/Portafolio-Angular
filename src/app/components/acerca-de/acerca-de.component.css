@@ -1,84 +1,83 @@
 /*INFORMACION PRINCIPAL*/
 .contenedor {
-    padding-top: 5rem;
-    padding-right: 1rem;
-    text-align: center;
-    display: grid;
-    gap: 2rem;
+  max-width: 150rem;
+  padding-top: 13rem;
+  padding-right: 1rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
-    .contenedor {
-        grid-template-columns: repeat(2, 1fr);
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    }
-
-    .divsub {
-        grid-column: 1/3;
-    }
+  .divsub {
+    grid-column: 1/3;
+  }
 }
 
 @media (min-width: 1000px) {
-    .contenedor {
-        padding-top: 24rem;
-        grid-template-columns: 29% 39.5% 30%;
-    }
+  .contenedor {
+    padding-top: 20rem;
+    grid-template-columns: 29% 38.5% 30%;
+  }
 
-    .divsub {
-        grid-column: unset;
-        padding-top: 11rem;
-    }
+  .divsub {
+    grid-column: unset;
+    padding-top: 11rem;
+  }
 }
 
 @media (min-width: 1200px) {
-    .contenedor {
-        grid-template-columns: 29% 39.5% 26%;
-    }
+  .contenedor {
+    grid-template-columns: 29% 40.5% 28%;
+    padding-top: 24rem;
+  }
 }
 
 img {
-    width: 26rem;
-    box-shadow: 5px 5px 5px var(--naranja);
-    border-radius: 15%;
+  width: 26rem;
+  box-shadow: 5px 5px 5px var(--naranja);
+  border-radius: 15%;
 }
 
 @media (min-width: 1000px) {
-    img {
-        width: 36rem;
-    }
+  img {
+    width: 30rem;
+  }
 }
 
 .nombre {
-    /* text-shadow: 1px 1px 5px #cdcdcd96; */
-    text-shadow: 1px 1px 7px #000000;
+  text-shadow: 1px 1px 7px #000000;
 }
 
 .subtitulo {
-    font-size: 6.4rem;
-    text-shadow: 2px 2px 15px var(--naranja);
+  font-size: 6rem;
+  text-shadow: 2px 2px 15px var(--naranja);
 }
 
 /*ACERCA DE*/
 .divacerca {
-    max-width: 130rem;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 5rem;
-    padding-bottom: 5rem;
+  max-width: 130rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
 }
 
 @media (min-width: 1000px) {
-    .divacerca {
-        margin-top: 9rem;
-    }
+  .divacerca {
+    padding-top: 5rem;
+  }
 }
 
 p span {
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .h2acerca {
-    font-size: 3.36rem;
-    margin-bottom: 2rem;
+  font-size: 3.36rem;
+  margin-bottom: 2rem;
 }

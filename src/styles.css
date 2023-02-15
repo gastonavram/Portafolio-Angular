@@ -7,6 +7,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; /*1rem = 10px*/
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -80,6 +81,7 @@ p {
     background: url(../src/assets/fondo.webp);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 #lead-over {
@@ -90,7 +92,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 64%);
+    background: rgba(0, 0, 0, 60%); /*64%*/
     z-index: 1;
 }
 
